@@ -4,18 +4,24 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Typist - Typing Speed Test</title>
+    <title>Typist - Speed Test</title>
     <link rel="stylesheet" href="style.css" />
 </head>
 
 <body>
     <div class="container">
         <h1>Typist - Speed Test</h1>
-        <p id="text-display">The quick brown fox jumps over the lazy dog.</p>
 
-        <textarea id="text-input" placeholder="Start typing here..."></textarea>
+        <p id="text-display"></p>
 
-        <button onclick="checkTyping()">Check Speed</button>
+        <div id="timer">
+            ⏱ Time Left: <span id="time-left">60</span> seconds <br>
+            🧠 WPM: <span id="live-wpm">0</span>
+        </div>
+
+        <textarea id="text-input" placeholder="Start typing here..." disabled></textarea>
+
+        <button onclick="startTest()">Start Test</button>
 
         <div id="result"></div>
     </div>

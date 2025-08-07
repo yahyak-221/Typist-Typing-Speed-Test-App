@@ -1,0 +1,15 @@
+Real-time WPM counter
+
+Show correct vs. incorrect characters (color feedback)
+
+Add restart functionality
+
+Add multiple random texts
+
+Dark/light mode
+
+Save high scores in localStorage
+
+Graph of progress (Chart.js)
+
+User login (optional backend)
